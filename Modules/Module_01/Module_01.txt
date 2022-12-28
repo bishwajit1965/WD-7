@@ -1,4 +1,4 @@
-Dated: 
+Dated:
 Topic:
 Important aspects to be noted:
 ==============================
@@ -6,9 +6,9 @@ Important aspects to be noted:
 
 Important points:
 -----------------
-1.	
-2.	
-3.	
+1.	Hello how are you?
+2.
+3.
 4.
 5.
 6.
@@ -17,4 +17,4 @@ Important points:
 9.
 10.
 11.
-12.	
+12.
