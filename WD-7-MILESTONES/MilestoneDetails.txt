@@ -1,0 +1,77 @@
+Milestone details:
+==================
+01. Milestone-01
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+02. Milestone-02
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+03. Milestone-03
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+04. Milestone-04
+	Title:
+	Description:
+	Important points:
+	Gist:
+05. Milestone-05
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+06. Milestone-06
+	Title:
+	Description:
+	Important points:
+	Gist:
+07. Milestone-07
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+08. Milestone-08
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+09. Milestone-09
+	Title:
+	Description:
+	Important points:
+	Gist:
+10 Milestone-10
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+11. Milestone-11
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+12. Milestone-12
+	Title:
+	Description:
+	Important points:
+	Gist:
+
+13. Milestone-13
+	Title:
+	Description:
+	Important points:
+	Gist:
+	
