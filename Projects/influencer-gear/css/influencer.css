@@ -49,7 +49,7 @@ header {
   font-size: 1em;
   font-weight: 600;
   text-decoration: none;
-  margin: 0em 1.5em;
+  margin-left: 1.5em;
   color: #3a3a3a;
 }
 /* ===========================
@@ -59,19 +59,17 @@ header {
   width: 1200px;
   margin: 87px auto;
   border: 1px solid #ddd;
-  height: 475px;
 }
 .wrapper-box {
   background-image: url("../images/Circle\ design.svg");
   background-repeat: no-repeat;
   object-fit: cover;
-  background-position: right;
+  background-size: contain;
+  background-position: top right;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2em;
-  height: 475px;
-  margin-right: 25px;
+  gap: 1em;
 }
 .text-description > h2 {
   font-size: 3.12em;
@@ -86,6 +84,11 @@ header {
   color: #3a3a3a;
   width: 75%;
 }
+.camera-img img {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
 
 /* =========================
 | Online market styles
@@ -93,7 +96,6 @@ header {
 .online-markets {
   width: 1110px;
   margin: 100px auto;
-  border: 1px solid #ddd;
   height: 110px;
 }
 .market-wrapper-box {
@@ -167,7 +169,7 @@ header {
   display: flex;
   gap: 3.5em;
   align-items: center;
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
 }
 .feature-title {
   font-size: 2.2em;
@@ -187,6 +189,7 @@ footer {
   min-height: 150px;
   color: #fff;
   padding: 1.5em;
+  display: block;
 }
 .footer-wrapper {
   display: flex;
@@ -206,8 +209,142 @@ footer {
   font-size: 20px;
 }
 /* =========================
-| Global styles
+| Responsive styles
 ============================ */
+.hide {
+  display: none;
+}
+/* For cell-phone */
+@media only screen and (max-width: 576px) {
+  /* Header nav */
+  header {
+    margin: 20px 0px;
+    width: 100%;
+    padding: 0.5em;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .links a {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Start journey */
+  .start-journey {
+    display: flex;
+    justify-content: center;
+    margin: 0em auto;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .wrapper-box {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    background-position: center top;
+    background-size: contain;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .text-description h2 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .camera-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+
+  /* Online markets */
+  .online-markets {
+    margin: 0px;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .market-wrapper-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    grid-column-start: 1;
+  }
+  .market-wrapper-box img {
+    width: 80%;
+    height: 80%;
+  }
+
+  /* Popular collection */
+  .popular-collection {
+    margin: 0px;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .collection {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+  }
+  .section-title {
+    font-size: 1.5em;
+  }
+  .collection-box {
+    width: 100%;
+    margin: 0px;
+  }
+  .collection-box > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    height: auto;
+    background-position: center;
+  }
+
+  /* Feature products */
+  .featured-products {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0px 0px;
+    flex-direction: column;
+  }
+  .feature-title {
+    font-size: 1.5em;
+    margin: 0px 0px;
+  }
+  .feature-image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    height: auto;
+  }
+  .feature-description {
+    color: #6c6c6c;
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 0.5em;
+  }
+  .footer-title {
+    font-size: 1em;
+  }
+  .copyright {
+    font-size: 0.8em;
+  }
+}
+
 /* =========================
 | Global styles
 ============================ */
