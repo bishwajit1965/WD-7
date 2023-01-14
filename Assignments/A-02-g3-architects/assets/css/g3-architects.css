@@ -27,13 +27,13 @@
 .button-primary {
   background-color: #ff900e;
   width: 180px;
-  height: 64px;
+  height: 50px;
   color: #fff;
   font-size: 1.25em;
   font-weight: 600;
   border-radius: 0.5rem;
   text-align: center;
-  margin: 2rem 0rem;
+  margin: 1rem 0rem;
 }
 
 /*=====================
@@ -76,7 +76,7 @@ header {
 .description-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
   text-align: center;
   color: var(--light);
 }
@@ -87,12 +87,121 @@ header {
   margin-top: 1.25rem;
 }
 
-/*=====================
-| Global styles
-========================*/
-/*=====================
-| Global styles
-========================*/
+/*==========================
+| Quick-list-features styles
+============================*/
+.quick-list-features {
+  margin: 50px 228px;
+
+  border: 1px solid #ddd;
+}
+.quick-list-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.quick-list-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+}
+.quick-list-images > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+}
+.quick-list-title {
+  font-weight: 500;
+  font-size: 2rem;
+  /* line-height: 53px; */
+}
+.quick-list-description {
+  color: var(--header-light);
+}
+.decorated-color-one {
+  color: var(--header-light);
+}
+.decorated-color-two {
+  color: var(--header-text);
+}
+.decorated-color-three {
+  color: var(--decorated-text);
+}
+.description-text {
+  font-size: 1rem;
+}
+
+/*========================
+| loveable-features styles
+==========================*/
+.loveable-features {
+  margin: 50px 228px;
+  border: 1px solid #ddd;
+}
+.feature-top-area {
+}
+
+.feature-title {
+  border-left: 3px solid var(--border-left);
+  padding-left: 0.5rem;
+  color: var(--header-text);
+}
+.feature-description {
+  margin: 1rem 0rem;
+  font-size: 14px;
+  color: var(--light);
+}
+.feature-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.description-box {
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin: 0.5rem 0rem;
+}
+.description-box-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--header-text);
+}
+.description-box-detail {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--light);
+}
+.feature-image {
+  position: relative;
+}
+
+.feature-image > img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 30px;
+}
+.hanging-btn {
+  position: absolute;
+  top: 356px;
+  right: 180px;
+  background-color: #ff900e;
+  width: 150px;
+  height: 90px;
+  color: #fff;
+  font-size: 1.25em;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 1rem 0rem;
+}
+.hang-btn-top-text {
+  font-size: 1.5rem;
+}
+.hang-btn-experience-text {
+  font-size: 14px;
+}
 /*=====================
 | Global styles
 ========================*/
