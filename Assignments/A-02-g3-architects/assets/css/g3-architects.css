@@ -85,6 +85,7 @@ header {
   line-height: 24px;
   text-align: center;
   color: var(--light);
+  margin: 1rem 0rem;
 }
 .banner img {
   width: 100%;
@@ -288,6 +289,7 @@ header {
   font-weight: 400;
   font-size: 16px;
   color: var(--light);
+  margin: 1rem 0rem;
 }
 .sponsors-wrapper {
   display: flex;
@@ -345,6 +347,7 @@ header {
 footer {
   margin: 4% 15%;
   background-color: var(--footer-bg);
+  padding: 1rem 0rem;
 }
 .copyright-text {
   height: 3rem;
