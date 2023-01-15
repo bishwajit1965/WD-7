@@ -1,6 +1,6 @@
-/*=====================
-| Global styles
-========================*/
+/*============================
+|  Global styles
+==============================*/
 * {
   margin: 0;
   padding: 0;
@@ -36,14 +36,14 @@
   text-align: center;
   margin: 1rem 0rem;
 }
-
-/*=====================
+/*============================
 | Header section styles
-========================*/
+==============================*/
+
 header {
   background-color: var(--header-bg);
-  min-height: 400px;
-  padding: 50px 228px;
+  /* padding: 50px 228px; */
+  padding: 4% 15%;
   /* border: 1px solid #ddd; */
 }
 .nav {
@@ -87,13 +87,11 @@ header {
   height: auto;
   margin-top: 1.25rem;
 }
-
-/*==========================
-| Quick-list-features styles
-============================*/
+/*============================
+|  Quick-list-features styles
+==============================*/
 .quick-list-features {
-  margin: 50px 228px;
-
+  margin: 4% 15%;
   border: 1px solid #ddd;
 }
 .quick-list-wrapper {
@@ -106,6 +104,7 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   align-items: center;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
 }
 .quick-list-images > img {
   width: 100%;
@@ -114,11 +113,13 @@ header {
 }
 .quick-list-title {
   font-weight: 500;
-  font-size: 2rem;
-  /* line-height: 53px; */
+  font-size: 2.8rem;
+  line-height: 53px;
 }
 .quick-list-description {
   color: var(--header-light);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .decorated-color-one {
   color: var(--header-light);
@@ -133,20 +134,21 @@ header {
   font-size: 1rem;
 }
 
-/*========================
-| loveable-features styles
-==========================*/
+/*============================
+|  Loveable-features styles
+==============================*/
 .loveable-features {
-  margin: 50px 228px;
+  margin: 4% 15%;
   border: 1px solid #ddd;
-}
-.feature-top-area {
 }
 
 .feature-title {
   border-left: 3px solid var(--border-left);
   padding-left: 0.5rem;
   color: var(--header-text);
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 53px;
 }
 .feature-description {
   margin: 1rem 0rem;
@@ -181,12 +183,11 @@ header {
 .feature-image > img {
   width: 100%;
   height: 100%;
-  margin-bottom: 30px;
 }
 .hanging-btn {
   position: absolute;
-  top: 356px;
-  right: 180px;
+  top: 385px;
+  right: 200px;
   background-color: #ff900e;
   width: 150px;
   height: 90px;
@@ -203,11 +204,13 @@ header {
 .hang-btn-experience-text {
   font-size: 14px;
 }
-/*=========================
-| Some facts section styles
-===========================*/
+
+/*============================
+|  Some facts section styles
+==============================*/
 .some-facts {
-  margin: 50px 228px;
+  /* margin: 50px 228px; */
+  margin: 4% 15%;
   border: 1px solid #ddd;
 }
 .facts-title {
@@ -220,6 +223,7 @@ header {
   font-size: 16px;
   color: var(--header-light);
   margin: 1rem 0rem;
+  width: 50%;
 }
 
 .facts-image-wrapper {
@@ -227,7 +231,6 @@ header {
   justify-content: space-between;
   gap: 1rem;
   align-items: center;
-  margin: 3rem 0rem;
   padding: 2rem;
 }
 .facts-image-wrapper .wrapper {
@@ -259,18 +262,101 @@ header {
 |  Our sponsors section styles
 ==============================*/
 .our-sponsors {
-  margin: 50px 228px;
+  margin: 4% 15%;
   border: 1px solid #ddd;
 }
-/*=====================
-| Global styles
-========================*/
-/*=====================
-| Global styles
-========================*/
-/*=====================
-| Global styles
-========================*/
-/*=====================
-| Global styles
-========================*/
+.sponsor-heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.sponsors-title {
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 53px;
+  color: var(--header-text);
+}
+.sponsors-description {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--light);
+}
+.sponsors-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*============================
+| Bonus testimonial  styles
+==============================*/
+.added-bonus-testimonial-feature {
+  margin: 4% 15%;
+  border: 1px solid #ddd;
+  /* min-height: 200px; */
+}
+.testimonial-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  gap: 1.5rem;
+}
+.testimonial-title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 53px;
+  color: var(--header-text);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.testimonial-box {
+  border: 1px solid var(--border);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #f6f6f6;
+}
+.testimonial-box > h5 {
+  text-align: right;
+  margin: 0.2rem 0rem;
+}
+.testimonial {
+  font-size: 1rem;
+  color: var(--light);
+  line-height: 1.2rem;
+}
+.testimonial > img {
+  width: 40px;
+  height: 25px;
+}
+
+/*============================
+| Footer section styles
+==============================*/
+footer {
+  margin: 4% 15%;
+  border: 1px solid #ddd;
+  background-color: var(--footer-bg);
+}
+.copyright-text {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem;
+}
+.social-links > a > i {
+  font-size: 1.5rem;
+  margin: 0rem 1rem;
+}
+/*============================
+| Cell-phone responsive styles
+==============================*/
+/*============================
+| Tablet responsive styles
+==============================*/
+.hide {
+  display: none;
+}
