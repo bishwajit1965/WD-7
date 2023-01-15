@@ -29,12 +29,6 @@
     display: grid;
     align-content: flex-start;
   }
-  .brand-new-architects {
-    padding: 0.5rem;
-  }
-  .brand-new-architects .section-title {
-    margin-bottom: 1rem;
-  }
 
   /* Quick list features responsive style */
   .quick-list-features {
@@ -105,10 +99,8 @@
     text-align: center;
   }
 
-  /* All titles responsive style for cell-phone  */
+  /* All titles style */
   .brand-title,
-  .quick-list-title,
-  .section-title,
   .section-title,
   .feature-title,
   .facts-title,
