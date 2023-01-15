@@ -24,6 +24,13 @@
   --border-left: #ff900e;
   --decorated-text: #ff900e;
   --footer-bg: #fff4e7;
+
+  --bg-dark: #161616;
+  --grey: #b9b9b9;
+  --bg-red: #ff0000;
+  --bg-yellow: #ffff00;
+
+  --green: #008000;
 }
 
 .button-primary {
@@ -235,6 +242,19 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.wrapper {
+  background-color: #fff;
+  color: #fff;
+  transition: background-color 1s;
+}
+.facts-image-wrapper > .wrapper:hover {
+  background-image: linear-gradient(to right, var(--bg-red), var(--bg-yellow));
+  transform: rotate(360deg);
+  transition-duration: 1s;
+  transition: 0.8s ease-in;
+  color: #fff;
 }
 .wrapper > h4 {
   font-weight: 600;
