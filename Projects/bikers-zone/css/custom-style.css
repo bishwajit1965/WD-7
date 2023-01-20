@@ -1,0 +1,18 @@
+.bikers-zone-light-red {
+  background-color: #e76f51;
+  height: 25px;
+  width: 25px;
+  border-radius: 13px;
+}
+.bikers-zone-star-rating-color {
+  color: #ea8167;
+}
+.bikers-zone-decorate-title-color {
+  color: #e76f51;
+}
+.bikers-zone-button-color {
+  background-color: #e76f51;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
