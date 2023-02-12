@@ -1,0 +1,38 @@
+1. node -v 
+   [will chek if node is installed and if installed will show the node version as well]
+2. npm init -y
+3. npm i -D tailwindcss
+4. Create a folder named "src" and create a file named "tailwind.css" and create another folder named    "output" as well in the root folder
+   In "src" folder  create input.css file and write the following code:
+   -----------------
+   @tailwind base;
+   @tailwind components;
+   @tailwind utilities;
+
+---------------------------------------------------------------------------
+5. Create a folder named .vscode and crate file named settings.json and write:
+  {
+  "css.validate": false,
+  "tailwindCSS.emmetCompletions": true
+  }
+---------------------------------------------------------------------------
+
+6. npx tailwindcss init
+
+---------------------------------------------------------------------------
+7. In package.json write the following code:
+   "scripts": {
+    "build": "tailwindcss ./src/input.css -o ./output/output.css -w"
+   },
+---------------------------------------------------------------------------
+8. In index.html file link the output.css file in output folder.
+   <link rel="stylesheet" href="./output/output.css" />
+
+9. Add:
+   content: ["./**/*.{html,js}"],
+   in tailwind.config.js
+
+10. npm run build 
+   [command will build css]
+
+

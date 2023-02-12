@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS positions</title>
+    <link rel="stylesheet" href="position.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header-title">CSS positions</h1>
+      <div class="positions">
+        <!-- Static Position -->
+        <div class="static-position">
+          <h1>Static positioned element</h1>
+          <p>
+            <b>NOTE:</b> HTML elements are positioned static by default. Static
+            positioned elements are not affected by the top, bottom, left, and
+            right properties. An element with position: static; is not
+            positioned in any special way; it is always positioned according to
+            the normal flow of the page:
+          </p>
+        </div>
+        <div class="fixed-position">
+          <h1>Fixed positioned div</h1>
+          <p>
+            Note: It is commented. Uncomment the p tag and you will see the
+            result.
+          </p>
+          <div class="fixed-position-test">
+            <!-- <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+              cumque natus autem doloribus iusto neque, omnis voluptatum nostrum
+              velit laborum aut dignissimos! Quaerat esse vel, veritatis
+              reiciendis suscipit fugit, nulla at quibusdam consequatur beatae
+              sapiente quidem provident ducimus quod minus amet totam sequi
+              eligendi autem alias aliquam vero ut odit! Non beatae, commodi
+              eligendi mollitia sit, rem numquam omnis laudantium quae
+              voluptatibus iste exercitationem recusandae architecto veniam. In
+              ex nemo dolor commodi fuga laudantium deserunt, minima dolore a
+              sed recusandae eos hic, neque perferendis. Quaerat esse sed quam
+              totam corrupti aliquam rerum minus ab officiis, exercitationem
+              blanditiis ipsam alias vel.
+            </p> -->
+          </div>
+        </div>
+        <div class="position-relative">
+          <h1>Relative and absolute positioned element</h1>
+          <p>
+            <b>NOTE:</b>
+            An element with position: relative; is positioned relative to its
+            normal position. Setting the top, right, bottom, and left properties
+            of a relatively-positioned element will cause it to be adjusted away
+            from its normal position. Other content will not be adjusted to fit
+            into any gap left by the element.
+          </p>
+          <h4>Normal position:</h4>
+          <img
+            src="images/01.png"
+            id="image-1"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+          <img
+            src="images/02.png"
+            id="image-2"
+            width="200px"
+            height="200px"
+            alt=""
+          />
+          <h4>Relative position:</h4>
+          <img src="images/01.png" class="img-one" alt="" />
+          <img src="images/02.png" class="img-two" alt="" /><br /><br />
+          <hr />
+          <h4>Another example of absolute and relative positioned elements</h4>
+          <div class="relative-div">
+            <h2>This is a relative positioned div - position: relative</h2>
+            <div class="absolute-div">
+              <h2>This is an absolute positioned div - position: absolute</h2>
+              <p>
+                An element with position: absolute; is positioned relative to
+                the nearest positioned ancestor (instead of positioned relative
+                to the viewport, like fixed):
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+.total-field{
+  background-color: rgb(1, 114, 1);
+}
+.field{
+    background-color: rgb(1, 114, 1);
+    border: 10px solid;
+    height: 580px;
+    width: 1200px;
+    margin: 20px;
+    margin-left: 55px;
+    border-radius: 25%;
+    border-color: rgba(253, 253, 253, 0.418);
+    
+    
+    
+}
+@keyframes balling{
+0% {
+bottom: 100px;
+}  
+50%{
+    top: 480px;
+}  
+100%{
+    bottom: 0px;
+}
+}
+
+.field:hover .bat{
+    transform: rotate(-45deg);
+    transform-origin:top right ;
+    
+}
+.bat{
+    transition: transform 0.2s ease-in;
+}
+.ball{
+    background-color: brown;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 607px;
+    bottom: 100px;
+   transition: transform 1s ease-out 0.3s;
+}
+
+.field:hover .ball{
+    transform: translate(700px, -400px) ;
+}

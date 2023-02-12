@@ -1,0 +1,32 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  border: 1px solid #ddd;
+}
+.bat {
+  background-color: #e6880d;
+  height: 200px;
+  color: #fff;
+}
+
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 25px;
+
+  margin: 0px 50px;
+}
+.bat {
+  transform: rotate(35deg);
+}
+.container:hover .bat {
+  transform: translate(150px);
+  transform: rotate(-35deg);
+  transform-origin: 60% 0%;
+}
+.container:hover .ball {
+  transform: translate(950px);
+}

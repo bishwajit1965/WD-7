@@ -1,0 +1,31 @@
+Programming Hero Support session:
+---------------------------------
+Morning:11.00AM
+Afternoon:04.00PM
+Night:9.00PM
+
+Programming Hero Help Post in Facebook Group:
+---------------------------------------------
+Post the problem writing with
+	#help
+When problem is solved change #help to
+	#resolved
+
+How to get best out of the Programming Hero Web Development Course:
+-------------------------------------------------------------------
+1. Afford 6 to 8 hours dedicated time
+2. Try 100% to get the best out of this course.
+3. Take a promise to get the best out of this course
+4. Do not be distracted
+5  Do not try to learn for assignment only, learn to lern in the truest sense of the term for lifetime
+6. When you find something difficult ask question to get the thing clear in group in support session or    in conceptual session.
+7. Practice well before assignment if you get struck any where.
+8. Assignment submission is a must.
+9. Assignment marks should be 50% or above the total(60/50/30) marks.
+
+Orientation Module Summary:
+---------------------------
+1. Make time slots/box for time management.
+2. Take early access at 8.00PM and watch videos and complete in time.
+3. Watch videos other than peogramming hero from youtube to get a strong undestanding of the topic.
+4. Avoid all distractions to get the best of the course.

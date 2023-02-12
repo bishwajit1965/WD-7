@@ -1,0 +1,9 @@
+Loop
+========
+1. Display "Hello Javascript" 39 times.
+2. Display numbers between 58 to 98.
+3. Show all even numbers from 412 to 456.
+4. Show all odd numbers from 581 to 623.
+5. Difference between while loop and for loop.
+6. Run a loop from 30 to 86. The loop will stop at certain point.
+7. Write an array with the values of books and display the prices lower than 200.

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event bubbling</title>
+    <style>
+      #body {
+        border: 4px solid yellowgreen;
+      }
+      #main {
+        border: 2px solid yellow;
+      }
+      #content-wrapper {
+        border: 2px solid red;
+      }
+      #item1 {
+        border: 2px solid green;
+      }
+      #list-items {
+        border: 2px solid peru;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <header id="header">
+      <h1>Explore Event Bubbling in Js</h1>
+    </header>
+    <main id="main">
+      <section id="content-wrapper">
+        <ul id="list-items">
+          <li id="item1">Item -1</li>
+          <li id="item2">Item -2</li>
+          <li id="item3">Item -3</li>
+          <li id="item4">Item -4</li>
+        </ul>
+      </section>
+      <p id="text-msg">Hello I am a paragraph for updating my value</p>
+      <input type="text" name="" id="text-message" />
+      <button id="more-events-btn">More Events</button>
+    </main>
+    <footer id="footer-text">
+      <p>&copy; 2023 All rights reserved</p>
+    </footer>
+
+    <!-- Js file linked -->
+    <script src="../js/eventBubble.js"></script>
+  </body>
+</html>

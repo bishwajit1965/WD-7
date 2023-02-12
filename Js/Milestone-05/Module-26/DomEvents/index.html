@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Events</title>
+    <style>
+      .main {
+        width: 80%;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main id="main">
+      <h1>Javascript Dom Events</h1>
+
+      <button id="btn1" onclick="console.log(`I have been clicked`)">
+        Click Me
+      </button>
+      <!-- Option: 1 -->
+      <button onclick="document.body.style.backgroundColor='yellow'">
+        Make Yellow
+      </button>
+      <!-- option:2 -->
+      <button onclick="makeBodyRed()">Make Red</button>
+      <!-- Option:3 -->
+      <button id="btn-blue">Make Blue</button>
+      <!-- Option:4 -->
+      <button id="btn-purple">Make Purple</button>
+      <!-- Most updated option using addEventListener() method -->
+      <button id="btn-pink">Make Pink</button>
+      <!-- Most updated option using addEventListener() method with a little variation-->
+      <button id="btn-green">Make Green</button>
+      <!-- Most updated option using addEventListener() method with a little variation-->
+      <button id="btn-green-bg">Make Sky Blue</button>
+      <!-- Most updated option using addEventListener() method with a little variation FINAL VERSION TO BE USED-->
+      <button id="btn-golden-rod-bg">Make Bg Golden Rod</button>
+    </main>
+    <!-- Js -->
+    <script src="../js/events.js"></script>
+  </body>
+</html>

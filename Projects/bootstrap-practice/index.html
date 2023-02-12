@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <style>
+      img {
+        width: 100%;
+        background-size: cover;
+      }
+
+      .box {
+        height: 300px;
+      }
+      .flex-item {
+        background-color: #39ee39;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary gr">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- <div class="container">
+      <div
+        class="row h-100 d-flex flex-row-reverse justify-content-between align-items-center"
+      >
+        <div class="col-1 w-25 bg-info-subtle">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis debitis fugiat perferendis odio voluptate itaque atque
+            animi aut maiores quibusdam! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Perspiciatis debitis fugiat perferendis odio
+            voluptate itaque atque animi aut maiores quibusdam!
+          </p>
+        </div>
+        <div class="col-1 w-25 bg-info-subtle">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis debitis fugiat perferendis odio voluptate itaque atque
+            animi aut maiores quibusdam!
+          </p>
+        </div>
+        <div class="col-1 w-25 bg-info-subtle">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis debitis fugiat perferendis odio voluptate itaque atque
+            animi aut maiores quibusdam!
+          </p>
+        </div>
+         <div class="item-1 border border-primary bg-info-subtle w-25 h-25">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perspiciatis debitis fugiat perferendis odio voluptate itaque atque
+            animi aut maiores quibusdam!
+          </p>
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="row text-center">
+        <div class="col bg-danger-subtle">
+          <h1 class="justify-content-center align-content-center">
+            <h1>Header box</h1>
+          </h1>
+        </div>
+      </div>
+      <div
+        class="row row-cols-md-2 row-cols-lg-4 text-center text-white justify-content-between bg-primary my-1"
+      >
+        <div class="col-sm-3 h-100 bg-body-emphasis align-items-center">
+          <h1>Box-1</h1>
+        </div>
+        <div class="col-sm-3 h-100 bg-danger align-items-center">
+          <h1>Box-2</h1>
+        </div>
+        <div class="col-sm-3 h-100 bg-danger align-items-center">
+          <h1>Box-3</h1>
+        </div>
+        <div class="col-sm-3 h-100 bg-body-emphasis align-items-center">
+          <h1>Box-4</h1>
+        </div>
+      </div>
+      <div class="row text-center justify-content-between bg-primary my-1">
+        <div class="col-sm-6 bg-body-info"><h1>Box-5</h1></div>
+        <div class="col-sm-6 bg-danger"><h1>Box-6</h1></div>
+      </div>
+      <div class="row text-center text-white bg-primary my-1">
+        <div class="col-sm-9 bg-body-emphasis text-center">
+          <h1>Box-7</h1>
+        </div>
+        <div class="col-sm-3 bg-secondary text-center"><h1>Box-8</h1></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div
+        class="box d-flex g-2 flex-wrap justify-content-center align-items-center align-content-center"
+        style="height: 200px"
+      >
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-1
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-2
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-3
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-4
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-5
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-6
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-7
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-8
+        </div>
+        <div
+          class="flex-item d-flex justify-content-center align-items-center w-25 h-25 g-1"
+        >
+          Box-9
+        </div>
+      </div>
+    </div>
+    <div class="container mb-3">
+      <h1>Flex</h1>
+      <div class="d-flex p-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>
+        To create an inline flexbox container, use the d-inline-flex class
+      </h1>
+      <div class="d-flex p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container">
+      <h1>Horizontal Direction</h1>
+      <p>
+        Use .flex-row to display the flex items horizontally (side by side).
+        This is default.
+      </p>
+      <p>Tip: Use .flex-row-reverse to right-align the horizontal direction:</p>
+      <div class="d-flex flex-row p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div class="d-flex flex-row-reverse p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Vertical Direction</h1>
+      <p>
+        Use .flex-column to display the flex items vertically (on top of each
+        other)
+      </p>
+      <p>Tip: Use or .flex-column-reverse to reverse the vertical direction:</p>
+      <div class="d-flex flex-column p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div class="d-flex flex-column-reverse p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Justify content</h1>
+      <p>
+        Use the .justify-content-* classes to change the alignment of flex
+        items. Valid classes are start (default), end, center, between or around
+      </p>
+
+      <div
+        class="d-flex justify-content-center p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div class="d-flex justify-content-end p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div
+        class="d-flex justify-content-start p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div
+        class="d-flex justify-content-between p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div
+        class="d-flex justify-content-around p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Fill equal width</h1>
+      <p>Use .flex-fill on flex items to force them into equal widths:</p>
+
+      <div
+        class="d-flex justify-content-center p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 flex-fill bg-info">Flex item 1</div>
+        <div class="p-2 flex-fill bg-warning">Flex item 2</div>
+        <div class="p-2 flex-fill bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Flex grow</h1>
+      <p>
+        Use .flex-grow-1 on a flex item to take up the rest of the space. In the
+        example below, the first two flex items take up their necessary space,
+        while the last item takes up the rest of the available space:
+      </p>
+
+      <div
+        class="d-flex justify-content-center p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 flex-grow-1 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Flex shrink</h1>
+      <p>
+        Tip: Use .flex-shrink-1 on a flex item to make it shrink if necessary.
+      </p>
+
+      <div
+        class="d-flex justify-content-center p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 flex-shrink-1 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Order</h1>
+      <p>
+        Change the visual order of a specific flex item(s) with the .order
+        classes. Valid classes are from 0 to 5, where the lowest number has
+        highest priority (order-1 is shown before order-2, etc..):
+      </p>
+
+      <div
+        class="d-flex justify-content-center p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="p-2 order-3 bg-info">Flex item 1</div>
+        <div class="p-2 order-2 bg-warning">Flex item 2</div>
+        <div class="p-2 order-1 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Auto margin</h1>
+      <p>
+        Easily add auto margins to flex items with .ms-auto (push items to the
+        right), or by using .me-auto (push items to the left):
+      </p>
+
+      <div class="d-flex p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 ms-auto bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div class="d-flex p-3 mb-3 bg-secondary text-white">
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 me-auto bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Wrap</h1>
+      <p>
+        Control how flex items wrap in a flex container with .flex-nowrap
+        (default), .flex-wrap or .flex-wrap-reverse.
+      </p>
+
+      <div
+        class="d-flex flex-wrap align-content p-3 mb-3 bg-secondary text-white"
+      >
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-1</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-2</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-3</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-4</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-5</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-6</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-7</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-8</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-9</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-10</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-11</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-12</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-13</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-14</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-15</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-16</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-17</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-18</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-19</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-20</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-21</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-22</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-23</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-24</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-25</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-26</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-27</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-28</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-29</div>
+        <div class="flex-item p-2 bg-info border p-3">Flex-item-30</div>
+      </div>
+    </div>
+
+    <div class="container py-3 my-3">
+      <h1>Align Items</h1>
+      <p>
+        Control the vertical alignment of single rows of flex items with the
+        .align-items-* classes. Valid classes are .align-items-start,
+        .align-items-end, .align-items-center, .align-items-baseline, and
+        .align-items-stretch (default).
+      </p>
+
+      <div
+        class="d-flex align-items-start p-3 mb-3 bg-secondary text-white"
+        style="height: 150px"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div
+        class="d-flex align-items-end p-3 mb-3 bg-secondary text-white"
+        style="height: 150px"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div
+        class="d-flex align-items-center p-3 mb-3 bg-secondary text-white"
+        style="height: 150px"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div
+        class="d-flex align-items-baseline p-3 mb-3 bg-secondary text-white"
+        style="height: 150px"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+      <div
+        class="d-flex align-items-stretch p-3 mb-3 bg-secondary text-white"
+        style="height: 150px"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+      </div>
+    </div>
+    <div class="container py-3 my-3">
+      <h1>Align Self</h1>
+      <p>
+        Control the vertical alignment of a specified flex item with the
+        .align-self-* classes. Valid classes are .align-self-start,
+        .align-self-end, .align-self-center, .align-self-baseline, and
+        .align-self-stretch (default).
+      </p>
+
+      <div
+        class="d-flex p-3 mb-3 bg-secondary text-white"
+        style="height: 150px"
+      >
+        <div class="p-2 bg-info">Flex item 1</div>
+        <div class="p-2 bg-warning align-self-start">Flex item 2</div>
+        <div class="p-2 bg-primary">Flex item 3</div>
+        <div class="p-2 bg-warning align-self-center">Flex item 3</div>
+        <div class="p-2 bg-info align-self-end">Flex item 3</div>
+        <div class="p-2 bg-primary align-self-baseline">Flex item 3</div>
+        <div class="p-2 bg-warning align-self-stretch">Flex item 3</div>
+      </div>
+    </div>
+
+    <div class="container mt-3">
+      <h2>Responsive Flex Classes</h2>
+      <p>
+        All flex classes comes with additional responsive classes, which makes
+        it easy to set a specific flex class on a specific screen size. The *
+        symbol can be replaced with sm, md, lg, xl or xxl, which represents
+        small, medium, large, xlarge and xxlarge screens.
+      </p>
+      <p>Resize the browser window to see the effect.</p>
+      <div class="d-flex bg-success">d-flex</div>
+      <span class="d-sm-flex bg-success">d-sm-flex</span>
+      <span class="d-md-flex bg-success">d-md-flex</span>
+      <span class="d-lg-flex bg-success">d-lg-flex</span>
+      <span class="d-xl-flex bg-success">d-xl-flex</span>
+      <span class="d-xxl-flex bg-success">d-xxl-flex</span>
+    </div>
+
+    <!-- Bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

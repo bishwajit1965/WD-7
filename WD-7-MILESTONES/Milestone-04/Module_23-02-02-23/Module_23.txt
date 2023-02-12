@@ -1,0 +1,3 @@
+PROBLEM NO: 1
+====================
+write a function with a parameter of array of numbers. If the array elements are divisible by both 3 and 5 then it will print 'foobar'. If divisible by 3 it will print 'foo' and if divisible by 5 it will print 'bar'.

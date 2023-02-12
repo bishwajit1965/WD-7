@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid layout</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        gap: 10px;
+        /* height: 400px; */
+        width: 80%;
+        margin: auto;
+        border: 1px solid green;
+      }
+      .box {
+        /* width: 115px; */
+        /* height: 115px; */
+        background-color: royalblue;
+        border-radius: 0.3em;
+        font-size: 1.5em;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+      }
+      .box-1 {
+        grid-column: 1 / -1;
+        padding: 0.5em;
+      }
+      .box-2 {
+        grid-column: 1 / span 4;
+        padding: 0.5em;
+      }
+      .box-3 {
+        grid-column: span 1;
+        padding: 0.5em;
+      }
+      .box-4 {
+        grid-column: 1 / span 5;
+        padding: 0.5em;
+      }
+      .box-5 {
+        grid-column: 1 / 4;
+        padding: 0.5em;
+      }
+      .box-6 {
+        grid-column: span 2;
+        padding: 0.5em;
+      }
+      .box-7 {
+        grid-column: span 2;
+        padding: 0.5em;
+      }
+      .box-8 {
+        grid-column: span 3;
+        padding: 0.5em;
+      }
+      .box-9 {
+        grid-column: 1 / span 3;
+        padding: 0.5em;
+      }
+      .box-10 {
+        grid-column: span 2;
+        padding: 0.5em;
+      }
+      .box-11 {
+        grid-column: 1 / -1;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="box box-1">
+        Box -1 Hello I love you very much. Hello I love you very much.Hello I
+        love you very much.Hello I love you very much.Hello I love you very
+        much.
+      </div>
+      <div class="box box-2">
+        Box -2 Hello I love you very much. Hello I love you very much.Hello I
+        love you very much.Hello I love you very much. much.
+      </div>
+      <div class="box box-3">
+        Box -3 Hello I love you very much. Hello I love you very much.Hello I
+        love you very much.Hello I love you very much.Hello I love you very
+        much.
+      </div>
+      <div class="box box-4">
+        Box -4 Hello I love you very much. Hello I love you very much.Hello I
+        love you very much.Hello I love you very much.Hello I love you very
+        much.
+      </div>
+      <div class="box box-5">
+        Box -5 Hello I love you very much. Hello I love you very much.Hello I
+        love you very much.Hello I love you very much. much.
+      </div>
+      <div class="box box-6">
+        Box -6 Box -5 Hello I love you very much. Hello I love you very
+        much.Hello I love you very much.Hello I love you very much. much.
+      </div>
+      <div class="box box-7">
+        Box -7 Box -5 Hello I love you very much. Hello I love you very
+        much.Hello I love you very much.Hello I love you very much. much.
+      </div>
+      <div class="box box-8">
+        Box -8 Hello I love you very much. Hello I love you very much.Hello I
+        love you very much.Hello I love you very much. much.
+      </div>
+      <div class="box box-9">
+        Box -9 Box -5 Hello I love you very much. Hello I love you very
+        much.Hello I love you very much.Hello I love you very much. much.
+      </div>
+      <div class="box box-10">
+        Box -10 Box -5 Hello I love you very much. Hello I love you very
+        much.Hello I love you very much.Hello I love you very much. much.
+      </div>
+      <div class="box box-11">
+        Box -10 Hello I love you very much. Hello I love you very much.Hello I
+        love you very much.Hello I love you very much.Hello I love you very
+        much.
+      </div>
+    </div>
+  </body>
+</html>

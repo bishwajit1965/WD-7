@@ -26,10 +26,10 @@
 | Header styles
 ============================ */
 header {
-  width: 1200px;
-  margin: 87px auto;
+  /* width: 1200px;
+  margin: 87px auto; */
 }
-.nav {
+/* .nav {
   display: flex;
   justify-content: space-between;
 }
@@ -50,7 +50,7 @@ header {
   text-decoration: none;
   margin-left: 1.5em;
   color: #3a3a3a;
-}
+} */
 /* ===========================
 | Start Journey section styles
 ============================== */

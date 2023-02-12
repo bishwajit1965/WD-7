@@ -208,6 +208,10 @@ footer {
   margin-top: 26px;
 }
 
+.hide {
+  display: none;
+}
+
 /* =====================
 | Media query styles
 ======================== */

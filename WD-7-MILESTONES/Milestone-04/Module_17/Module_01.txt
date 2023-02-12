@@ -1,0 +1,37 @@
+01/25/2023
+
+Practice Problem: 1
+==================
+Harry's mom gave him money and asked him to buy some oranges and apples. Write a programmw to help Harry calculate how much money the shopkeeper will return.
+
+Input:
+The fist line of input is the taka Harry's mom gave him.
+The second line is the cost of 1kg of oranges and 1kg of apples.
+
+Output:
+Print the result
+
+Practice Problem: 2
+===================
+Write a programme to calculate the average the marks of Mathematics, Biology, Chemistry, Physics and Bangla of a student.
+
+Input: The first line of the input is the marks of the five subjects mentioned above, respectively.
+
+Output:
+Print the result in 2 decimal places.
+
+Practice Problem: 3
+===================
+John's teacher gve him two variables. Each variable contains a string. John's teacher asked him to combine these two strings and print them in one line. Help John write the programme.
+
+Input: The first and the second line contains string.
+
+Output: Print the result in one line.
+
+Practice Problem: 4
+===================
+Sara's mom teaches her mathematics. She gave Sara a number and asked her what the remainder would be if the number is divided by 5. Help Sarah to write the programme.
+
+Input: The first lineof the input contains the number:
+
+Output the number:

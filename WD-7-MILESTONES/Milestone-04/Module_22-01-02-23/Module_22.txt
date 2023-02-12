@@ -1,0 +1,12 @@
+8:27 PM 2/1/2023
+================
+V-22-1:
+----------------------------------------------
+Topic: String conversion using "toLowerCase()"
+
+Note: String is immutable(Does not change over time)
+That means a string can not be changed as an array
+
+V-22-2:
+----------------------------------------------
+

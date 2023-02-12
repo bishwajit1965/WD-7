@@ -72,7 +72,7 @@ input:checked ~ nav .navbar-toggler {
 input:checked ~ nav .navbar-toggler .bar:nth-child(1) {
   position: absolute;
   transform: rotate(45deg);
-  background: red;
+  background: #ff0000;
 }
 
 input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
@@ -82,7 +82,7 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(2) {
 input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
   position: absolute;
   transform: rotate(-45deg);
-  background: red;
+  background: #ff0000;
 }
 
 @media (max-width: 675px) {
@@ -102,5 +102,8 @@ input:checked ~ nav .navbar-toggler .bar:nth-child(3) {
   }
   nav .navbar-toggler {
     display: grid !important;
+  }
+  nav .navbar-toggler {
+    float: left;
   }
 }
