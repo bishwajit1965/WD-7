@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1b551efcfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Valentine cost calculation</title>
+  </head>
+  <body>
+    <!-- Header begins -->
+    <header class="px-4 md:px-14">
+      <h1 class="text-2xl font-bold md:text-3xl md:font-bold">
+        Valentine cost calculator
+      </h1>
+    </header>
+    <main>
+      <div
+        class="grid grid-cols-1 items-center md:grid-cols-2 md:gap-4 md:p-10"
+      >
+        <div class="input-wrapper">
+          <section
+            id="chocolate"
+            class="m-4 shadow-md p-3 rounded-md bg-green-400"
+          >
+            <h3 class="md:text-2xl font-medium text-white mb-3">
+              Chocolate Section
+            </h3>
+            <hr />
+            <h3 class="md:text-2xl font-medium text-white mt-3">
+              Chocolate price: $ <span id="per-chocolate-price">50</span>
+            </h3>
+            <input
+              type="text"
+              name=""
+              id="chocolate-qty"
+              class="border border-slate-300 w-3/4 rounded p-1 mr-2 mt-3"
+              placeholder="Type chocolate quantity..."
+            />
+            <button
+              type="button"
+              id="chocolate-btn"
+              class="bg-blue-600 px-3 py-1 rounded-md text-white font-medium hover:bg-pink-400"
+            >
+              Submit
+            </button>
+          </section>
+          <section id="rose" class="m-4 shadow-md p-3 rounded-md bg-blue-400">
+            <h3 class="md:text-2xl font-medium text-white mb-3">
+              Rose Section
+            </h3>
+            <hr />
+            <h3 class="md:text-2xl font-medium text-white mt-3">
+              Rose price: $ <span id="per-rose-price">100</span>
+            </h3>
+            <input
+              type="text"
+              name=""
+              id="rose-qty"
+              class="border border-slate-300 w-3/4 rounded p-1 mr-2 mt-3"
+              placeholder="Type rose quantity..."
+            />
+            <button
+              type="button"
+              id="rose-btn"
+              class="bg-blue-600 px-3 py-1 rounded-md text-white font-medium hover:bg-pink-400"
+            >
+              Submit
+            </button>
+          </section>
+          <section
+            id="diary"
+            class="m-4 shadow-md p-3 rounded-md bg-purple-400"
+          >
+            <h3 class="md:text-3xl font-medium text-white mb-3">
+              Diary Section
+            </h3>
+            <hr />
+
+            <h3 class="md:text-2xl font-medium text-white mt-3">
+              Diary price: $ <span id="per-diary-price">250</span>
+            </h3>
+            <input
+              type="text"
+              name=""
+              id="diary-qty"
+              class="border border-slate-300 w-3/4 rounded p-1 mr-2 mt-3"
+              placeholder="Type diary quantity..."
+            />
+            <button
+              type="button"
+              id="diary-btn"
+              class="bg-blue-600 px-3 py-1 rounded-md text-white font-medium hover:bg-pink-400"
+            >
+              Submit
+            </button>
+          </section>
+        </div>
+        <div class="cost-calculation">
+          <div class="m-4 p-3 rounded-md bg-green-400 text-white shadow-lg">
+            <div class="mb-5">
+              <h1 class="md:text-2xl font-bold mb-2">
+                Valentine budget $ <span id="total-budget">5000</span>
+              </h1>
+              <hr />
+            </div>
+
+            <div class="bg-green-400 text-white">
+              <h4 class="md:text-2xl font-bold mb-4">
+                Chocolate Cost: $ <span id="chocolate-total">00</span>
+              </h4>
+            </div>
+            <div class="md:text-2xl font-bold mb-4">
+              <h4 class="md:text-2xl font-bold mb-4">
+                Rose Cost: $<span id="rose-total">00</span>
+              </h4>
+            </div>
+            <div class="md:text-2xl font-bold mb-4">
+              <h4 class="md:text-2xl font-bold mb-4">
+                Diary Cost: $<span id="diary-total">00</span>
+              </h4>
+            </div>
+            <hr />
+            <div class="md:text-2xl font-bold mb-4 bg-purple-500 p-3 rounded">
+              <h4 class="md:text-2xl font-bold">
+                Total Cost: $ <span id="total-cost">00</span>
+              </h4>
+            </div>
+            <button
+              type="button"
+              id="total-count"
+              class="bg-blue-600 px-3 py-1 rounded-md text-white font-medium hover:bg-pink-400"
+            >
+              Count Total
+            </button>
+
+            <div class="coupon">
+              <h4 class="md:text-2xl font-bold mb-4">
+                Coupon waiver calculation
+              </h4>
+              <input
+                type="text"
+                name=""
+                id="coupon-id"
+                class="px-3 py-2 rounded w-3/4 text-slate-500"
+                placeholder="Type coupon code 101 to get 10% discount"
+              />
+              <button
+                type="button"
+                id="coupon-discount-btn"
+                class="bg-blue-600 px-3 py-2 rounded-md text-white font-medium hover:bg-pink-400"
+              >
+                Submit
+              </button>
+            </div>
+            <div class="bg-purple-600 mt-5 p-3 rounded-md">
+              <span>
+                <h1 class="md:text-2xl font-bold inline-block">
+                  Payable after waiver:
+                </h1>
+              </span>
+              <span
+                id="net-amount-payable"
+                class="md:text-2xl font-bold text-right"
+                >00</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4 md:px-14 md:mt-8 shadow-lg">
+        <h1 class="md:text-2xl font-bold">Text-editor</h1>
+        <div class="text-area-wrapper border px-5 py-4">
+          <div class="flex justify-between gap-2">
+            <div class="">
+              <button
+                type="button"
+                id="text-bold"
+                class="bg-green-500 px-2 rounded text-white font-medium"
+              >
+                B
+              </button>
+              <button
+                type="button"
+                id="text-italic"
+                class="bg-green-500 px-2 rounded text-white font-medium"
+              >
+                <i class="fa fa-italic"></i>
+              </button>
+            </div>
+            <div class="">
+              <button
+                type="button"
+                id="center"
+                class="bg-green-500 px-2 rounded text-white font-medium"
+              >
+                <i class="fa fa-align-center"> </i>
+              </button>
+              <button
+                type="button"
+                id="change-text-position"
+                class="bg-green-500 px-2 rounded text-white font-medium"
+              >
+                <i class="fa fa-align-right"></i>
+              </button>
+              <button
+                type="button"
+                id="change"
+                class="bg-green-500 px-2 rounded text-white font-medium"
+              >
+                <i class="fa fa-eye-dropper"></i>
+              </button>
+
+              <button
+                type="button"
+                id="font"
+                class="bg-green-500 px-2 rounded text-white font-medium"
+              >
+                <i class="fa fa-text-height"></i>
+              </button>
+            </div>
+            <div class="flex">
+              <input
+                type="color"
+                name="fav-color"
+                id="fav-color"
+                value="#ff0000"
+                class="mr-2"
+              />
+              <button
+                type="button"
+                id="color-value"
+                class="bg-green-500 px-2 rounded text-white font-medium"
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+          <div class="">
+            <textarea
+              name=""
+              id="text-area-data"
+              cols="41"
+              rows=""
+              class="p-3 border w-100 mt-4"
+              placeholder="Write your text here..."
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer area begins -->
+    <footer class="bg-slate-800 text-center text-white p-2">
+      <p>&copy; 2023 All are copy right protected.</p>
+    </footer>
+    <!-- Js file linked -->
+    <script src="helpers.js"></script>
+    <script src="valentine.js"></script>
+    <script src="editor.js"></script>
+  </body>
+</html>

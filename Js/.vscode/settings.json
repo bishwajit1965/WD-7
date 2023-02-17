@@ -1,3 +1,6 @@
 {
-  "cSpell.words": ["grapper"]
+  "cSpell.words": ["grapper"],
+  "editor.formatOnSave": true,
+  "editor.suggest.preview": true,
+  "editor.suggest.shareSuggestSelections": true
 }
